@@ -3,7 +3,7 @@ use python and go to bypass datadome tag.js
 
 ### 🍑 How to use (just v4.25.0)
 
-```
+```python
 # use datadome.py
 
 pip install browserforge
@@ -22,8 +22,10 @@ except Exception as e:
     raise Exception(f"🤺 Failed to get datadome cookies: {e}")
 ```
 
-#### Using bin mode, you can only obtain fake data. Therefore, you need to use your HTTP client to perform a `POST` request. Set `fake_data.headers` as your request headers and `fake_data.payload` as the body of the request, then send this data to the endpoint `https://api-js.datadome.co/js/` to obtain the cookies.
-```
+    Using bin mode, you can only obtain fake data. Therefore, you need to use your HTTP client to perform a `POST` request.
+    Set `fake_data.headers` as your request headers and `fake_data.payload` as the body of the request, then send this data to the endpoint `https://api-js.datadome.co/js/` to obtain the cookies.
+
+```bash
 # use datadome_bin.py
 
 pip install browserforge
@@ -190,7 +192,7 @@ $ {
 }
 ```
 
-```
+```bash
 # use bin/datadome
 
 $ ./bin/datadome --ddv=4.25.0 --ddk=your_datadome_key -url=https://test.com
